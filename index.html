@@ -34,19 +34,19 @@
       <div class="board">
         <table>
           <tr>
-            <td onclick="press('02')"></td>
-            <td onclick="press('01')" class="v"></td>
-            <td onclick="press('00')"></td>
+            <td id="00"onclick="press(0,0)" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
           </tr>
           <tr>
-            <td onclick="press('12')" class="h"></td>
-            <td onclick="press('11')" class="v h"></td>
-            <td onclick="press('10')" class="h"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
           </tr>
           <tr>
-            <td onclick="press('22')"></td>
-            <td onclick="press('21')" class="v"></td>
-            <td onclick="press('20')"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
+            <td id="12" onclick="press(1,2)"  ondragover="allowDrop(event)" ondrop = "makeMove2(event)"class="h"></td>
           </tr>
         </table>
       </div>
@@ -59,6 +59,10 @@
       <h1>O</h1>
       <h1>X</h1>
     </div>
+    <h1 id="yay"></h1>
+
+
+    
     <script src="./myscript.js"></script>
   </body>
 </html>
